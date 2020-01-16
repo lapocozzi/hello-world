@@ -1,2 +1,147 @@
-<h1> ciaone </h1>
-<img src="arrow.svg">
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index-style2.css">
+    <link rel="shortcut icon" href="logoweb.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"> 
+    <link rel="stylesheet" href="style-query2.css">
+    <title>LAPO COZZI</title>
+</head>
+<body>  
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#cosa-offro" class="nav-a"> servizi</a> </li>
+            <li><a href="#contatti" class="nav-a">contatti</a> </li>
+        </ul>
+    </nav>
+    <!--                                                                         BLOCK1    -->                  
+<div class="block1">
+    <span class="it-en"> <a href="#" id="activated">IT</a> | <a href="index-lapo-en.html">EN</a></span>
+    <img src="img/bck2.jpg" alt=""class="block1-img1" id="img2">
+    <h1>LAPO COZZI</h1>
+    <h2>Web designer/Developer freelancer</h2>
+    <a href="#" onclick="scrollami()"><img src="img/arrow.svg" alt="" class="block1-arrow"></a>
+</div>
+
+
+<!--                                                                            CHI SONO         -->             <div class="main-block">
+        <h3 class="title-main">Basta coi soliti siti template impersonali!</h3>
+        <p class="subtitle-main">Il web è saturo di siti copia-incolla generati dai soliti template
+            impersonali.<br>
+            Il sito web è la vetrina del tuo business, per questo è importante curarlo e personalizzarlo.<br>
+        </p>
+        <h3 class="main-intro">I benefici di un sito scritto manualmente sono molteplici:</h3>
+        <div class="separator"></div>
+        <h2 class="h2-list">Velocità di caricamento</h2>
+        <p class="p-list">Una webpage sviluppata manualmente sarà incomparabilmente più veloce di una corrispettiva pagina
+          generata da un template. Il codice è ridotto al minimo favorendone così anche una migliore comprensione in caso di successivi update.
+        </p>
+        <img src="img/review.png" alt="" class="site-speed-img" id="speed-img">
+        <p class="speed-description">Risultati ottenuti col tool di google <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights">Page speed insights</a></p>
+        <img src="img/background.svg" alt="" class="bottom-svg" id="img1">
+    </div>
+    <div class="redblock">
+        <h2 class="redblock-h2-1">La forma che vuoi!</h2>
+        <p class="p-list2">Per garantire una reale personalizzazione completa.<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perferendis inventore eius, neque eligendi enim. </p>
+        <h2 class="redblock-h2-2">-Lorem ipsum dolor sit amet</h2>
+        <p class="p-list3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae amet impedit nam laudantium iusto, est quia qui dolorem nisi corrupti?</p>
+    </div>       
+
+        <!--                                                                            CHI SONO         -->                              
+<div class="block2" id="chi-sono">
+    <h2 class="block-title-white"> Chi sono:</h2>
+    <img src="img/MyPicture.png" alt="Error unexpected" class="block2-img1">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo dicta ad dolor pariatur assumenda temporibus quia, molestias necessitatibus doloribus optio blanditiis 
+    </p>
+    <div class="rectangle"></div>
+    <div class="cube"></div>
+</div>
+<!--                                                                            COSA OFFRO                                                              -->
+<div class="block3" id="cosa-offro">
+    <h2 class="block-title"> Cosa offro:</h2>
+    <img src="img/develop.svg" alt="" class="svg1">
+    <p class="text1">
+      Progettazione e sviluppo del tuo sito web su misura!
+      Completo di design moderno, personalizzato e full-responsive.
+    </p>
+
+    <img src="img/html-css.svg" alt="" class="svg2">
+    <p class="text2">
+      Scrittura manuale del codice sorgente, favorendo velocità di caricamento, leggibilità ed efficenza.
+    </p>
+
+    <img src="img/linked.svg" alt="" class="svg3">
+    <p class="text3">
+      Prezzi contenuti per un lavoro di qualità.<br>
+      Piena possibilità di revisionare il progetto, costruiamo assieme il tuo sito web.
+    </p>
+</div>
+<!--                                                                            CONTATTI                                                              -->
+<div class="block4" id="contatti">
+<div class="orange-rect">
+    <span class="mail-font"><i class="fas fa-envelope"></i></span>
+    <span class="orange-text"> Contattami</span>
+    <span class="orange-text-bottom"> Per qualsiasi dubbio, info, chiarimento, richiesta, preventivo ecc...</span>
+</div>
+<div class="white-rect">
+      <form id="contact" action="form-contact.php" method="post">
+    <fieldset>
+      <input placeholder="Inserisci il tuo nome" type="text" tabindex="1" required name="name">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Il tuo indirizzo mail" type="email" tabindex="2" required name="email">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Il tuo numero di telefono (opzionale)" type="tel" tabindex="3" name="phone">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Il tuo website (opzionale)" type="url" tabindex="4" name="website">
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Scrivi qua il tuo messaggio..." tabindex="5" required name="message"></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Invia</button>
+    </fieldset>
+  </form>
+</div>
+
+
+
+</div>
+<footer> <p>Copyright © Lapo Cozzi 2020</p></footer>
+    <script src="Jquery.js"></script>
+
+    <script>
+      $(document).ready(function(){
+     document.getElementById('img1').ondragstart = function() { return false; };
+     document.getElementById('img2').ondragstart = function() { return false; };
+        window.onload = function(){
+            $(".nav-a").css("color","white");
+        };
+    window.onscroll = function(){navmenu()};
+
+    function navmenu(){
+ if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0){
+$("#navbar").addClass("navbar-scrolled");
+$(".nav-a").css("color","#212D40");
+ }else{
+$("#navbar").removeClass("navbar-scrolled");
+$(".nav-a").css("color","white");
+ }};
+      });
+
+  function scrollami(){
+    window.scroll({
+  top: 860,
+  left: 0,
+  behavior: 'smooth'
+});};
+    </script>
+
+</body>
+</html>
